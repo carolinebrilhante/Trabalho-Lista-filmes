@@ -1,3 +1,143 @@
-h2{
-	color: #478df5;
+header {
+  background-color: #a6c4f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: relative;
+}
+body {
+  background-color: #f5e6b3;
+  margin: 0;
+}
+
+h2 {
+  color: #10459c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+img {
+  width: 30%;
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.direita {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.direita a {
+  text-decoration: none;
+  color: #10459c;
+  background: #f5e6b3;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.direita a:hover {
+  background: #f5d86b;
+}
+
+.filmes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.filmes div {
+  width: 300px;
+}
+
+.filmes img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.filmes h4 {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.descricao {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.conteudo {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1000px;
+}
+
+.descricao img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto {
+  max-width: 700px;
+}
+
+.texto h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.avaliacao {
+  margin-top: 10px;
+}
+
+.avaliacao label {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.texto textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.texto textarea:focus {
+  outline: none;
+  border-color: #10459c;
+}
+
+.texto input[type="submit"] {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 20px;
+  background-color: #10459c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
