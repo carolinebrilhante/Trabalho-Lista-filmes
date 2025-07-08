@@ -1,143 +1,166 @@
+/* Estiliza o cabeçalho da página */
 header {
-  background-color: #a6c4f5;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
-  position: relative;
+  background-color: #a6c4f5; /* Define a cor de fundo azul claro */
+  display: flex; /* Usa flexbox para alinhar os elementos */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaça os elementos igualmente */
+  padding: 10px 40px; /* Espaçamento interno: 10px vertical, 40px horizontal */
+  position: relative; /* Permite posicionamento absoluto do h2 dentro */
 }
+
+/* Define o fundo da página e remove a margem padrão */
 body {
-  background-color: #f5e6b3;
-  margin: 0;
+  background-color: #f5e6b3; /* Cor de fundo amarelo claro */
+  margin: 0; /* Remove espaçamento padrão do navegador */
 }
 
+/* Estiliza o título principal dentro do header */
 h2 {
-  color: #10459c;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
+  color: #10459c; /* Cor azul escuro para o texto */
+  position: absolute; /* Posiciona absolutamente dentro do header */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta para centralização exata */
+  margin: 0; /* Remove margens padrão */
 }
 
+/* Define tamanho padrão para imagens gerais */
 img {
-  width: 30%;
+  width: 30%; /* Ocupa 30% do elemento pai */
 }
 
+/* Estiliza a div da esquerda no header */
 .esquerda {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: flex; /* Usa flexbox para alinhar itens */
+  align-items: center; /* Alinha itens verticalmente */
+  gap: 10px; /* Espaçamento entre itens */
 }
 
+/* Estiliza a div da direita no header */
 .direita {
-  display: flex;
+  display: flex; /* Flexbox também */
   align-items: center;
-  gap: 20px;
+  gap: 20px; /* Espaço maior entre os links da direita */
 }
 
+/* Estiliza os links dentro da div da direita */
 .direita a {
-  text-decoration: none;
-  color: #10459c;
-  background: #f5e6b3;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: background 0.3s;
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #10459c; /* Cor azul escuro */
+  background: #f5e6b3; /* Fundo igual ao body */
+  padding: 8px 15px; /* Espaçamento interno */
+  border-radius: 20px; /* Bordas arredondadas para efeito pill */
+  transition: background 0.3s; /* Transição suave ao passar mouse */
 }
 
+/* Efeito hover para links da direita */
 .direita a:hover {
-  background: #f5d86b;
+  background: #f5d86b; /* Muda a cor de fundo ao passar mouse */
 }
 
+/* Estiliza a seção de filmes */
 .filmes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 50px;
-  text-align: center;
+  display: flex; /* Usa flexbox para os filmes */
+  justify-content: center; /* Centraliza os filmes na tela */
+  flex-wrap: wrap; /* Quebra para nova linha se não couber */
+  gap: 40px; /* Espaço entre os blocos de filmes */
+  padding: 50px; /* Espaço interno da seção */
+  text-align: center; /* Centraliza texto dentro dos blocos */
 }
 
+/* Cada bloco de filme */
 .filmes div {
-  width: 300px;
+  width: 300px; /* Largura fixa dos cards de filme */
 }
 
+/* Imagens dentro da seção de filmes */
 .filmes img {
-  width: 100%;
-  border-radius: 8px;
+  width: 100%; /* Imagem ocupa 100% do card */
+  border-radius: 8px; /* Bordas arredondadas das capas */
 }
 
+/* Títulos dos filmes */
 .filmes h4 {
-  font-size: 16px;
-  margin-top: 10px;
-  font-weight: normal;
+  font-size: 16px; /* Tamanho da fonte */
+  margin-top: 10px; /* Espaço acima do título */
+  font-weight: normal; /* Peso normal (não negrito) */
 }
 
+/* Seção de descrição do filme individual */
 .descricao {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
+  display: flex; /* Usa flexbox para alinhar imagem e texto */
+  justify-content: center; /* Centraliza tudo horizontalmente */
+  padding: 40px; /* Espaço interno */
 }
 
+/* Container interno que envolve imagem e texto */
 .conteudo {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  max-width: 1000px;
+  display: flex; /* Flexbox novamente */
+  gap: 30px; /* Espaço entre imagem e texto */
+  align-items: flex-start; /* Alinha pelo topo */
+  max-width: 1000px; /* Largura máxima do conteúdo */
 }
 
+/* Imagem dentro da descrição */
 .descricao img {
-  width: 250px;
-  height: auto;
-  border-radius: 8px;
+  width: 250px; /* Tamanho fixo */
+  height: auto; /* Altura ajusta proporcionalmente */
+  border-radius: 8px; /* Bordas arredondadas */
 }
 
+/* Container do texto ao lado da imagem */
 .texto {
-  max-width: 700px;
+  max-width: 700px; /* Largura máxima do bloco de texto */
 }
 
+/* Parágrafos ou textos dentro do bloco de texto */
 .texto h3 {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 20px 0;
+  font-size: 16px; /* Tamanho da fonte */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  margin: 0 0 20px 0; /* Margem inferior de 20px */
 }
 
+/* Bloco de avaliação (estrelas, notas, etc) */
 .avaliacao {
-  margin-top: 10px;
+  margin-top: 10px; /* Espaço acima do bloco */
 }
 
+/* Label das opções de avaliação */
 .avaliacao label {
-  margin-right: 10px;
-  font-size: 20px;
-  cursor: pointer;
+  margin-right: 10px; /* Espaço entre as labels */
+  font-size: 20px; /* Tamanho maior para destaque */
+  cursor: pointer; /* Cursor de clique */
 }
 
+/* Caixa de texto para comentários */
 .texto textarea {
-  width: 100%;
-  max-width: 600px;
-  height: 120px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  resize: vertical;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  margin-top: 8px;
-  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.1);
+  width: 100%; /* Ocupa toda a largura do container */
+  max-width: 600px; /* Largura máxima */
+  height: 120px; /* Altura fixa */
+  padding: 10px; /* Espaço interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: 2px solid #ccc; /* Cor da borda padrão */
+  resize: vertical; /* Permite redimensionar verticalmente */
+  font-family: Arial, sans-serif; /* Fonte */
+  font-size: 14px; /* Tamanho da fonte */
+  margin-top: 8px; /* Espaço acima da caixa */
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.1); /* Sombra interna */
 }
 
+/* Efeito quando o textarea está em foco */
 .texto textarea:focus {
-  outline: none;
-  border-color: #10459c;
+  outline: none; /* Remove contorno padrão */
+  border-color: #10459c; /* Cor da borda muda para azul escuro */
 }
 
+/* Botão de enviar comentário */
 .texto input[type="submit"] {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 20px;
-  background-color: #10459c;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  display: inline-block; /* Torna o botão em linha */
+  margin-top: 12px; /* Espaço acima */
+  padding: 8px 20px; /* Tamanho do botão */
+  background-color: #10459c; /* Fundo azul escuro */
+  color: #fff; /* Texto branco */
+  border: none; /* Remove borda padrão */
+  border-radius: 20px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de clique */
+  transition: background-color 0.3s; /* Transição suave na cor */
 }
