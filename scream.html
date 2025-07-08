@@ -1,10 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="Lista_filmes.css"/>
+<!-- Importa uma fonte externa do Google Fonts (Playfair Display) -->	
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Cabeçalho é igual ao Lista_filmes -->
 
 <header>
 <div class="esquerda">
@@ -18,25 +20,40 @@
   </div>
 </header>
 
+<!-- Início da seção de descrição do filme -->	
 <section class="descricao">
+ <!-- Container que agrupa a imagem e o texto -->	
   <div class="conteudo">
+    <!-- Poster do filme em avaliação -->	  
     <img src="SCREAMBOAT.jpg" alt="Screamboat poster">
+
+    <!-- Bloco de texto com detalhes do filme -->	  
     <div class="texto">
+      <!-- Título do filme -->
 	<h3>Em Screamboat: Terror a Bordo</h3>
+	 <!-- Nota do filme no IMDB -->   
 	<h4>Nota no IMDB: 3</h4>
+      <!-- Descrição resumida do enredo -->	    
       <p>Em Screamboat: Terror a Bordo, o gore e o horror se misturam em alto-mar quando o rato mais famoso da cultura pop revela seu lado mais sombrio. Durante a última travessia de uma balsa noturna em Nova York, passageiros e tripulantes se vêem presos em uma luta desesperada pela sobrevivência quando um rato impiedoso conhecido como Willie assume o controle da travessia. Com as águas escuras ao redor impedindo qualquer fuga, o grupo inusitado a bordo precisa enfrentar a criatura sanguinária que transforma o passeio turístico em um pesadelo - e ninguém quer ser o próximo prato desse animal faminto que tem um apetite especial e macabro por turistas desavisados. Screamboat é uma comédia de terror que mescla sequências hilárias com uma atmosfera de puro pavor e medo para reimaginar um personagem clássico de maneira assustadora.</p>
-<form>
-      <div class="avaliacao">
-        <p>Avalie o filme:</p>
-        <label><input type="radio" name="estrela" value="1"> ⭐</label>
-        <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
-        <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
-      </div>
-	  <p>Adicione a sua opinão:</p>
-	  <textarea cols="5" rows="10"> </textarea>
-	  <input type="submit"/>
+      <!-- Início do formulário de avaliação -->
+      <form>
+        <!-- Bloco com estrelas para o usuário dar nota -->
+        <div class="avaliacao">
+          <p>Avalie o filme:</p>
+          <!-- Cada input radio representa uma nota em estrelas -->
+          <label><input type="radio" name="estrela" value="1"> ⭐</label>
+          <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
+        </div>
+        
+        <!-- Campo para o usuário adicionar opinião escrita -->
+        <p>Adicione a sua opinão:</p>
+        <textarea cols="5" rows="10"> </textarea>
+        
+        <!-- Botão para enviar o formulário -->
+        <input type="submit"/>
     </div>
 </form>	
   </div>
