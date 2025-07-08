@@ -1,11 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="Lista_filmes.css"/>
+  <!-- Importa uma fonte externa do Google Fonts (Playfair Display) -->	
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
+<!-- Cabeçalho é igual ao Lista_filmes -->
 <header>
 <div class="esquerda">
 <img src="natalia.jpg"> 
@@ -18,25 +19,41 @@
   </div>
 </header>
 
+<!-- Início da seção de descrição do filme -->
 <section class="descricao">
+  <!-- Container que agrupa a imagem e o texto -->
   <div class="conteudo">
+    <!-- Poster do filme -->
     <img src="nosfe.jpg" alt="Screamboat poster">
+    
+    <!-- Bloco de texto com detalhes do filme -->
     <div class="texto">
-	<h3>Nosferatu</h3>
-	<h4>Nota no IMDB: 3,6</h4>	
+      <!-- Título do filme -->
+      <h3>Nosferatu</h3>
+      <!-- Nota do filme no IMDB -->
+      <h4>Nota no IMDB: 3,6</h4>  
+      <!-- Sinopse do filme -->
       <p>Uma jovem noiva é deixada sob os cuidados de amigos quando seu marido viaja para a Transilvânia para um encontro com o Conde Orlok. Atormentada por visões terríveis e uma crescente sensação de pavor, ela logo encontra uma força maligna que está muito além de sua compreensão.</p>
-<form>
-      <div class="avaliacao">
-        <p>Avalie o filme:</p>
-        <label><input type="radio" name="estrela" value="1"> ⭐</label>
-        <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
-        <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
-      </div>
-	  <p>Adicione a sua opinão:</p>
-	  <textarea cols="5" rows="10"> </textarea>
-	  <input type="submit"/>
+      
+      <!-- Início do formulário de avaliação -->
+      <form>
+        <!-- Bloco com estrelas para o usuário dar nota -->
+        <div class="avaliacao">
+          <p>Avalie o filme:</p>
+          <!-- Cada input radio representa uma nota em estrelas -->
+          <label><input type="radio" name="estrela" value="1"> ⭐</label>
+          <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
+        </div>
+        
+        <!-- Campo para o usuário adicionar opinião escrita -->
+        <p>Adicione a sua opinão:</p>
+        <textarea cols="5" rows="10"> </textarea>
+        
+        <!-- Botão para enviar o formulário -->
+        <input type="submit"/>
     </div>
 </form>	
   </div>
