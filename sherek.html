@@ -1,10 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" href="Lista_filmes.css"/>
+<!-- Importa uma fonte externa do Google Fonts (Playfair Display) -->	
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<!-- Cabeçalho é igual ao Lista_filmes -->
 
 <header>
 <div class="esquerda">
@@ -18,25 +20,40 @@
   </div>
 </header>
 
+<!-- Início da seção de descrição do filme -->
 <section class="descricao">
+  <!-- Container que agrupa a imagem e o texto -->	
   <div class="conteudo">
+    <!-- Poster do filme em avaliação -->	  
     <img src="Shrekk.jpg" alt="Screamboat poster">
+
+    <!-- Bloco de texto com detalhes do filme -->	  
     <div class="texto">
+      <!-- Título do filme -->	    
 	<h3>Shrek</h3>
-	<h4>Nota no IMDB: 4,6</h4>	
+      <!-- Nota do filme no IMDB -->	    
+	<h4>Nota no IMDB: 4,6</h4>
+      <!-- Sinopse do filme -->	    
       <p>Em um pântano distante vive Shrek (Mike Myers), um ogro solitário que vê, sem mais nem menos, sua vida ser invadida por uma série de personagens de contos de fada, como três ratos cegos, um grande e malvado lobo e ainda três porcos que não têm um lugar onde morar. Todos eles foram expulsos de seus lares pelo maligno Lorde Farquaad (John Lithgow). Determinado a recuperar a tranquilidade de antes, Shrek resolve encontrar Farquaad e com ele faz um acordo: todos os personagens poderão retornar aos seus lares se ele e seu amigo Burro (Eddie Murphy) resgatarem uma bela princesa (Cameron Diaz), que é prisioneira de um dragão. Porém, quando Shrek e o Burro enfim conseguem resgatar a princesa logo eles descobrem que seus problemas estão apenas começando.</p>
-<form>
-      <div class="avaliacao">
-        <p>Avalie o filme:</p>
-        <label><input type="radio" name="estrela" value="1"> ⭐</label>
-        <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
-        <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
-        <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
-      </div>
-	  <p>Adicione a sua opinão:</p>
-	  <textarea cols="5" rows="10"> </textarea>
-	  <input type="submit"/>
+      <!-- Início do formulário de avaliação -->
+      <form>
+        <!-- Bloco com estrelas para o usuário dar nota -->
+        <div class="avaliacao">
+          <p>Avalie o filme:</p>
+          <!-- Cada input radio representa uma nota em estrelas -->
+          <label><input type="radio" name="estrela" value="1"> ⭐</label>
+          <label><input type="radio" name="estrela" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="estrela" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="estrela" value="5"> ⭐⭐⭐⭐⭐</label>
+        </div>
+        
+        <!-- Campo para o usuário adicionar opinião escrita -->
+        <p>Adicione a sua opinão:</p>
+        <textarea cols="5" rows="10"> </textarea>
+        
+        <!-- Botão para enviar o formulário -->
+        <input type="submit"/>
     </div>
 </form>	
   </div>
